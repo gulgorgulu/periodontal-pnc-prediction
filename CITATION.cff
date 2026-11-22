@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "Periodontal pocket non-closure prediction (GPBoost)"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/gulgorgulu/periodontal-pnc-prediction"
+authors:
+  - given-names: Nimet Gül
+    family-names: Görgülü
+  - given-names: Dilek
+    family-names: Mamaklıoğlu
+  - given-names: Yaprak
+    family-names: Kalkan
+  - given-names: Hatice Selin
+    family-names: Güngörmek
+  - given-names: Burcu
+    family-names: Karaduman
+  - given-names: Başak
+    family-names: Doğan
+preferred-citation:
+  type: article
+  title: "Predicting pocket non-closure after non-surgical periodontal therapy: multilevel analysis and externally validated machine-learning models"
+  authors:
+    - given-names: Nimet Gül
+      family-names: Görgülü
+    - given-names: Dilek
+      family-names: Mamaklıoğlu
+    - given-names: Yaprak
+      family-names: Kalkan
+    - given-names: Hatice Selin
+      family-names: Güngörmek
+    - given-names: Burcu
+      family-names: Karaduman
+    - given-names: Başak
+      family-names: Doğan
+  # Add journal, year, volume and DOI on publication.

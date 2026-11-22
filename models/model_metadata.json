@@ -1,0 +1,100 @@
+{
+  "description": "Final GPBoost models for the derived PNC probability, fitted on all development patients (baseline-diseased sites, PPD >= 5 mm). Trees only; no training data.",
+  "n_development_patients": 235,
+  "n_development_sites": 12396,
+  "numeric_features": [
+    "Age",
+    "PD.0",
+    "BOP.0",
+    "PI.0",
+    "CAL.0"
+  ],
+  "categorical_features": [
+    "Gender",
+    "DMType",
+    "Smoking",
+    "Furcation",
+    "Restoration",
+    "Vitality",
+    "Buccal.Oral",
+    "IsMolar"
+  ],
+  "categories": {
+    "Gender": [
+      1,
+      2
+    ],
+    "DMType": [
+      0,
+      1,
+      2
+    ],
+    "Smoking": [
+      0,
+      1
+    ],
+    "Furcation": [
+      0,
+      1
+    ],
+    "Restoration": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Vitality": [
+      0,
+      1
+    ],
+    "Buccal.Oral": [
+      1,
+      2
+    ],
+    "IsMolar": [
+      0,
+      1
+    ]
+  },
+  "numeric_ranges": {
+    "Age": [
+      18.0,
+      63.0
+    ],
+    "PD.0": [
+      5.0,
+      16.0
+    ],
+    "BOP.0": [
+      0.0,
+      1.0
+    ],
+    "PI.0": [
+      0.0,
+      3.0
+    ],
+    "CAL.0": [
+      2.0,
+      18.0
+    ]
+  },
+  "bop3_random_intercept_variance": {
+    "Patient.Code": 1.288235097301,
+    "ToothKey": 0.2144553116943516
+  },
+  "pd3_variance_components": {
+    "Error_var": 0.8031258707560187,
+    "Patient.Code": 0.26899474970823567,
+    "ToothKey": 0.1858523908159909
+  },
+  "pd3_oof_residuals": "sorted out-of-fold errors (observed - predicted 3-month PPD, mm), patient-grouped 5-fold cross-validation on the development data",
+  "pnc_rule": "PNC if 3-month PPD >= 5 mm, or 3-month PPD = 4 mm with BOP",
+  "gpboost_version": "1.7.1.1",
+  "export_check_max_abs_difference": {
+    "PPD vs GPBoost": 0.0,
+    "BOP vs GPBoost": 6.098455074265985e-13,
+    "PPD vs published external": 4.440892098500626e-16,
+    "BOP vs published external": 6.099010185778297e-13,
+    "PNC vs published external": 2.2382096176443156e-13
+  }
+}
